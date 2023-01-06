@@ -1,6 +1,8 @@
 import classes from "./AboutMe.module.css";
 
 const myImg = require("../../../images/me2.jpg");
+const resume = require("../../../images/Resume-Muhammad-Hamza.pdf");
+
 
 const AboutMe = () => {
   return (
@@ -38,7 +40,7 @@ const AboutMe = () => {
           passionate about learning new technologies in front-end and back-end
           web development.
         </p>
-        <a href="../images/Resume-Muhammad-Hamza.pdf" download>
+        <a href={resume} download>
           Download CV
         </a>
       </div>

@@ -1,0 +1,57 @@
+.education {
+  margin-bottom: 2.5rem;
+}
+.institute {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.degree {
+  max-width: 60%;
+}
+.degree > h5 {
+  margin: 0;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.degree > h6 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--GreyShade1);
+}
+.duration > p {
+  color: var(--Color1);
+  padding: 7px 25px;
+  border: 2px solid var(--GreyShade1);
+  border-radius: 20px;
+}
+.institute + p {
+  color: var(--GreyShade2);
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .degree > h5 {
+    font-size: 16px;
+  }
+  .degree > h6 {
+    font-size: 14px;
+  }
+  .duration > p {
+    font-size: 14px;
+  }
+  .institute + p {
+    font-size: 14px;
+  }
+  .institute {
+    display: block;
+  }
+  .institute > div {
+    max-width: 100%;
+  }
+  .duration > p {
+    width: fit-content;
+  }
+}

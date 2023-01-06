@@ -1,0 +1,36 @@
+.certificate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.info > h5 {
+  margin: 0;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.info > h6 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--GreyShade1);
+}
+.date > p {
+  color: var(--Color1);
+  padding: 7px 25px;
+  border: 2px solid var(--GreyShade1);
+  border-radius: 20px;
+}
+@media screen and (max-width: 576px) {
+  .certificate {
+    display: block;
+  }
+  .info > h5 {
+    font-size: 16px;
+  }
+  .info > h6 {
+    font-size: 14px;
+  }
+  .date > p {
+    width: fit-content;
+  }
+}

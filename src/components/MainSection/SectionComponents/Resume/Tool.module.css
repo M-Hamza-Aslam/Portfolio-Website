@@ -1,0 +1,11 @@
+.progressBar {
+  background-color: #ffb09e !important;
+}
+.progressBar > span {
+  background-color: var(--Color1);
+}
+@media screen and (max-width: 576px) {
+  .tool > h3 {
+    font-size: 16px;
+  }
+}

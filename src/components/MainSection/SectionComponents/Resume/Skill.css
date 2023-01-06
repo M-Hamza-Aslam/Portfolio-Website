@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.skill {
+  margin-bottom: 2rem;
+}
+.skill > h3 {
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+}
+.circularProgressbar {
+  width: 150px;
+  height: 150px;
+}
+.CircularProgressbar-path {
+  stroke: var(--Color1) !important ;
+  transition: stroke-dashoffset 1s ease 0s !important;
+}
+.CircularProgressbar-text {
+  fill: var(--Color1) !important;
+  font-size: 16px !important;
+}
+.CircularProgressbar-trail {
+  stroke: #ffb09e !important;
+}
+@media screen and (max-width: 576px) {
+  .circularProgressbar {
+    width: 100px;
+    height: 100px;
+  }
+  .skill > h3 {
+    font-size: 16px;
+  }
+}

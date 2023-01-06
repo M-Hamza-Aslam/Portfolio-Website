@@ -1,0 +1,48 @@
+.card {
+  width: 22%;
+  background-color: #616368;
+  border-radius: 15px;
+  padding: 48px 40px;
+  flex-grow: 1;
+}
+.card > svg {
+  background-color: var(--Color2);
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 3.5rem;
+}
+.card > h2 {
+  font-weight: 800;
+  margin: 30px 0px;
+  height: 66px;
+}
+.card > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--GreyShade1);
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .card > h2 {
+    height: auto;
+  }
+  .card > p {
+    -webkit-line-clamp: 3;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card > svg {
+    padding: 15px;
+    font-size: 3rem;
+  }
+  .card > h2 {
+    font-size: 20px;
+    height: auto;
+  }
+}

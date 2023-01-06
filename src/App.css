@@ -1,0 +1,13 @@
+.designDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #34353a;
+  height: calc(100vh + 65px);
+  width: 76%;
+  clip-path: polygon(100% 0%, 81% 86%, 0% 100%, 0% 0%);
+}
+.mainBody {
+  z-index: 3;
+  position: relative;
+}

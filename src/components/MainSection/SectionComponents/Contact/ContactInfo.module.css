@@ -1,0 +1,48 @@
+.main {
+  width: 35%;
+}
+.contactInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.contactInfo > svg {
+  background-color: var(--Color2);
+  border-radius: 50%;
+  padding: 1.5rem;
+  font-size: 42px;
+  margin-right: 1rem;
+}
+.contactInfo > div > h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+}
+.contactInfo > div > h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--GreyShade2);
+}
+
+@media screen and (max-width: 994px) {
+  .main {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactInfo > svg {
+    padding: 1rem;
+    font-size: 32px;
+  }
+  .contactInfo > div > h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .contactInfo > div > h3 {
+    font-size: 14px;
+    line-break: anywhere;
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+}
+.footer > h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--GreyShade2);
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.social > a {
+  text-decoration: none;
+  color: var(--GreyShade2);
+}
+.social > a:hover {
+  color: var(--Color1);
+}
+.social > a > h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .social {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .social {
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,119 @@
+.outer {
+  display: flex;
+  position: relative;
+  height: 500px;
+}
+.innerLeft {
+  min-width: 60%;
+}
+.innerLeft > img {
+  width: 250px;
+  height: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: 0 -5px;
+}
+.basicInfo {
+  width: 200px;
+  border-radius: 12px;
+  background-color: var(--Color1);
+  padding: 35px;
+  position: absolute;
+  top: 60px;
+  left: 185px;
+}
+.basicInfo > h6 {
+  margin: 0 0 7px 0;
+  color: rgb(212, 212, 212);
+  font-size: 14px;
+}
+.basicInfo > p {
+  margin-top: 7px;
+  font-weight: 600;
+  margin: 0;
+}
+.basicInfo > hr {
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  margin-top: 10px;
+}
+
+/* innerRightDiv */
+.innerRight > h2 {
+  margin-top: 0;
+  color: var(--Color1);
+  font-weight: 900;
+}
+.innerRight > h3 {
+  font-weight: 900;
+  font-size: 25px;
+}
+.innerRight > h4 {
+  color: var(--GreyShade1);
+  font-size: 18px;
+}
+.innerRight > p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--GreyShade2);
+  margin-bottom: 30px;
+}
+.innerRight > a {
+  background-color: var(--Color1);
+  border-radius: 10px;
+  border: none;
+  padding: 10px 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 16px;
+  font-family: var(--font1);
+  text-decoration: none;
+  margin: 10px 0px;
+}
+.innerRight > a:hover {
+  background-color: var(--Color2);
+}
+
+@media screen and (max-width: 992px) {
+  .outer {
+    flex-direction: column-reverse;
+    position: static;
+    height: auto;
+  }
+  .innerLeft {
+    min-width: none;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .innerLeft > img {
+    display: none;
+  }
+  .basicInfo {
+    margin-top: 30px;
+    position: static;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .innerRight > h2 {
+    font-size: 16px;
+  }
+  .innerRight > h3 {
+    font-size: 16px;
+  }
+  .innerRight > h4 {
+    font-size: 12px;
+  }
+  .innerRight > p {
+    font-size: 14px;
+  }
+  .innerRight > a {
+    font-size: 14px;
+  }
+  .basicInfo > h6 {
+    font-size: 14px;
+  }
+  .basicInfo > p {
+    font-size: 14px;
+  }
+}

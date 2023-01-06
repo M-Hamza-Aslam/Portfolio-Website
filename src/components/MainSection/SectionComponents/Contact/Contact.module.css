@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  gap: 4%;
+}
+@media screen and (max-width: 994px) {
+  .main {
+    display: block;
+  }
+}

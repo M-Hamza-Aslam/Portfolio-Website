@@ -1,0 +1,25 @@
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.heading > h3 {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.heading > svg {
+  color: var(--Color1);
+  font-size: 20px;
+  border: 3px solid var(--Color1);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .heading > h3 {
+    font-size: 24px;
+  }
+  .heading > svg {
+    font-size: 16px;
+  }
+}

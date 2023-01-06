@@ -1,0 +1,67 @@
+.sectionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Color3);
+  padding: 35px;
+  margin-right: 5px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  overflow: hidden;
+}
+.sectionButton > svg {
+  color: var(--Color1);
+  font-size: 25px;
+}
+.sectionButton > p {
+  margin: 0 0 0 5px;
+  font-weight: 900;
+  font-size: 17px;
+  left: 50px;
+  max-width: 0px;
+  width: auto;
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.2s;
+}
+.sectionButton:hover > p {
+  left: 0px;
+  max-width: 100px;
+}
+.ActiveButton {
+  background-color: var(--Color1);
+}
+.ActiveButton > p {
+  left: 0px;
+  max-width: 250px;
+}
+.ActiveButton > svg {
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .sectionButton {
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: 0px;
+    margin-bottom: 7px;
+    padding: 20px;
+  }
+  .sectionButton > p {
+    font-size: 20px;
+    transition: none;
+    left: 0px;
+    margin-left: 20px;
+  }
+  .sectionButton > svg {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sectionButton > p {
+    font-size: 18px;
+  }
+  .sectionButton > svg {
+    font-size: 22px;
+  }
+}

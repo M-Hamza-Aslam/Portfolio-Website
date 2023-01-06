@@ -1,0 +1,10 @@
+.mainDiv {
+  background-color: var(--Color3);
+  padding: 55px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 576px) {
+  .mainDiv {
+    padding: 30px 20px;
+  }
+}

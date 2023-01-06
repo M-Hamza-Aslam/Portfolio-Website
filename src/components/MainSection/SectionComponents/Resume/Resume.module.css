@@ -1,0 +1,31 @@
+.main > h6 {
+  color: var(--Color1);
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+}
+.main > h2 {
+  font-size: 35px;
+  font-weight: 900;
+  margin: 20px 0 50px 0;
+  max-width: 60%;
+}
+.outer {
+  display: flex;
+  justify-content: space-between;
+}
+.outer > div {
+  width: 48%;
+}
+@media screen and (max-width: 992px) {
+  .main > h2 {
+    max-width: 100%;
+    font-size: 24px;
+  }
+  .outer {
+    display: block;
+  }
+  .outer > div {
+    width: 100%;
+  }
+}

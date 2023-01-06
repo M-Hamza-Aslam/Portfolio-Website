@@ -2,6 +2,8 @@ import classes from "./Header.module.css";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+const resume = require("../images/Resume-Muhammad-Hamza.pdf");
+
 const Header = () => {
   return (
     <div className={classes.header}>
@@ -30,7 +32,7 @@ const Header = () => {
             <SiGmail />
           </a>
         </div>
-        <a href="../images/Resume-Muhammad-Hamza.pdf" download>
+        <a href={resume} download>
           Download CV
         </a>
       </div>

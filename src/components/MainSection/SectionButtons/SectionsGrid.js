@@ -10,7 +10,6 @@ import {
   MdPostAdd,
   MdMail,
 } from "react-icons/md";
-// import { useState } from "react";
 
 const sectionIcons = [
   { name: "About Me", icon: <MdTextSnippet /> },
@@ -32,6 +31,7 @@ const SectionsGrid = (props) => {
             info={sec}
             onSelection={props.onSelection}
             activeSection={props.activeSection}
+            scrollHandler={props.scrollHandler}
           />
         );
       })}

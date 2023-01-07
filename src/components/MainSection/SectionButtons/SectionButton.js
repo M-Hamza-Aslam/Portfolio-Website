@@ -7,6 +7,8 @@ const SectionButton = (props) => {
 
   const selectionHandler = () => {
     props.onSelection(props.info.name);
+    props.scrollHandler();
+
   };
   return (
     <button className={ButtonClasses} onClick={selectionHandler}>

@@ -9,7 +9,7 @@ import Testimonial from "./SectionComponents/Testimonial/Testimonial";
 import classes from "./MainSection.module.css";
 
 import SectionsGrid from "./SectionButtons/SectionsGrid";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const sections = {
   "About Me": <AboutMe />,
@@ -26,14 +26,19 @@ const MainSection = (props) => {
   const selectionHandler = (SecName) => {
     setActiveSection(SecName);
   };
+  const mainDiv = useRef();
 
+  const scrollToMainDiv = () => {
+    mainDiv.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <SectionsGrid
         onSelection={selectionHandler}
         activeSection={activeSection}
+        scrollHandler={scrollToMainDiv}
       />
-      <div className={classes.mainDiv}>{sections[activeSection]}</div>
+      <div ref={mainDiv} className={classes.mainDiv}>{sections[activeSection]}</div>
     </div>
   );
 };

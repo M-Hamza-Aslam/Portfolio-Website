@@ -23,7 +23,7 @@ const AboutMe = () => {
           <p>+92 313 0260405</p>
           <hr />
           <h6>Address</h6>
-          <p>Jung Press, Karachi</p>
+          <p>Jang Press, Karachi</p>
           <hr />
           <h6>Nationality</h6>
           <p>Pakistani</p>

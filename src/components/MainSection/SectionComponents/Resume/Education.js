@@ -2,7 +2,7 @@ import classes from "./Education.module.css";
 import Heading from "./Heading";
 const educationInfo = [
   {
-    degree: "Bechelor of Computer Science",
+    degree: "Bachelor of Computer Science",
     institute: "NED University of Engineering & Technology",
     duration: "2020 - 2024",
     detail:

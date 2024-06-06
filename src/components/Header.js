@@ -18,7 +18,7 @@ const Header = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/muhammad-hamza-1bb698213/"
+            href="https://www.linkedin.com/in/muhammad-hamza-ned/"
             target="_blank"
             rel="noreferrer"
           >

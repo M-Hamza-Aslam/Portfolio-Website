@@ -15,7 +15,7 @@ const DisplaySection = () => {
           <span>A PASSIONATE</span>
           <Typewriter
             options={{
-              strings: [" REACT.JS DEVELOPER", " FRONT-END DEVELOPER"],
+              strings: [" MERN STACK DEVELOPER", " REACT.JS DEVELOPER"],
               autoStart: true,
               loop: true,
             }}

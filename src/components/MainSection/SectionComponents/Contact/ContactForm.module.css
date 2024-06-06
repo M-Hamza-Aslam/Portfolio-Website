@@ -1,3 +1,11 @@
+.successMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: rgb(15, 231, 15);
+  gap: 6px;
+}
 .form {
   width: 63%;
   display: flex;

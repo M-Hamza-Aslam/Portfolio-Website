@@ -1,6 +1,7 @@
 import classes from "./ContactForm.module.css";
 import { useForm, ValidationError } from "@formspree/react";
 import { useState } from "react";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("mrgvglkd");
@@ -19,7 +20,10 @@ const ContactForm = () => {
   return (
     <>
       {state.succeeded ? (
-        <p>Message has submitted successfully!</p>
+        <div className={classes.successMessage}>
+          <CheckCircleIcon />
+          <p>I've got your message, will contact you shortly</p>
+        </div>
       ) : (
         <form onSubmit={handleSubmit} className={classes.form}>
           <div className={classes.inputDiv}>
@@ -90,7 +94,7 @@ const ContactForm = () => {
             type="submit"
             disabled={state.submitting}
           >
-            Submit Now
+            Send Message
           </button>
         </form>
       )}

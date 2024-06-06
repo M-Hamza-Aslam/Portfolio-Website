@@ -8,7 +8,7 @@ const Footer = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/muhammad-hamza-1bb698213/"
+          href="https://www.linkedin.com/in/muhammad-hamza-ned/"
         >
           <h2>LinkedIn</h2>
         </a>

@@ -19,9 +19,9 @@ const Resume = () => {
         </div>
         <div className={classes.innerRight}>
           <Skill />
-          <Tool />
         </div>
       </div>
+      <Tool />
     </>
   );
 };

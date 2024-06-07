@@ -7,36 +7,36 @@ import { changeArrDimension } from "../../../../features/ChangeArrDimension";
 
 const testimonialCards = [
   {
-    name: "Basel Gilani",
-    position: "Data Engineer",
-    img: require("../../../../images/basel.jpg"),
-    msg: "Thank you for the hard work you put into developing the website. It's clear that a lot of thought and effort went into it, and it shows in the final product.",
+    name: "Syed Maisam Naqvi",
+    position: "CGO, Tassaract",
+    img: require("../../../../images/cgo-tassaract.jpeg"),
+    msg: "Muhammad Hamza is an exceptionally skilled MERN Stack developer adept at seamlessly managing projects. With his robust technical proficiency and excellent communication skills, he proves to be an invaluable asset.",
   },
   {
-    name: "Usman",
-    position: "CEO Fork Devs",
-    img: require("../../../../images/usman.jpg"),
-    msg: "Your patience and willingness to listen to my ideas and concerns made the development process a pleasure. I'm really happy with how the website turned out.",
+    name: "Muhammad Maaz Faisal",
+    position: "Lead, Esolace Tech",
+    img: require("../../../../images/lead-esolace.jpeg"),
+    msg: "I highly recommend Hamza as a Mern stack developer. He used to be my junior, and I can't emphasize enough how dedicated and honest he is. Hamza is always striving to improve himself, and he's the kind of person who goes out of his way to help his colleagues. I truly believe he's not just a great asset but also has the potential to lead teams effectively. You won't regret having him on your team! 👍",
   },
 
   {
-    name: "Mustafa",
-    position: "Data Analyst",
-    img: require("../../../../images/mustafa.jpg"),
-    msg: "The website is a huge asset to our business, and we couldn't have done it without your help. Thank you for your contributions.",
+    name: "Muhammad Hassan",
+    position: "Software Engineer, Tassaract",
+    img: require("../../../../images/se-tassaract.jpeg"),
+    msg: "It is an amazing experience to collaborate with Muhammad Hamza. He is not only a good programmer but a great human being as well. I really enjoy working with him 🙂",
   },
   {
-    name: "Safeer",
-    position: "Graphic Designer",
-    img: require("../../../../images/safeer.jpg"),
-    msg: "I've received many compliments on the website, and I know it wouldn't have turned out as well as it did without your skills and expertise.",
+    name: "Qazi Mairaj Uddin",
+    position: "Software Engineer, Tassaract",
+    img: require("../../../../images/se2-tassaract.jpeg"),
+    msg: "I am delighted to recommend Hamza for any team or organization looking for a dedicated and hardworking individual. Hamza stands out for his unwavering commitment to his work and his colleagues. Throughout our time working together, I have been consistently impressed by his ability to stay by the side of his co-workers, offering support and assistance whenever needed.",
   },
 ];
 
 const Testimonial = () => {
   const { width } = useWindowDimensions();
   let updatedTestimonialCards;
-  if (width > 768) {
+  if (width > 992) {
     updatedTestimonialCards = changeArrDimension(testimonialCards, 2);
   } else {
     updatedTestimonialCards = changeArrDimension(testimonialCards, 1);

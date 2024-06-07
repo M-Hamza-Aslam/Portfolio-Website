@@ -3,6 +3,11 @@ import Heading from "./Heading";
 
 const certificates = [
   {
+    name: "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+    instructor: "Maximilian Schwarzmüller on Udemy",
+    date: "03/2023",
+  },
+  {
     name: "React - The Complete Guide",
     instructor: "Maximilian Schwarzmüller on Udemy",
     date: "07/2022",

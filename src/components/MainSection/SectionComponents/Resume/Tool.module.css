@@ -4,6 +4,17 @@
 .progressBar > span {
   background-color: var(--Color1);
 }
+.tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .tools {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .tool > h3 {
     font-size: 16px;

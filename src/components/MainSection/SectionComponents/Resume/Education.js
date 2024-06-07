@@ -6,7 +6,7 @@ const educationInfo = [
     institute: "NED University of Engineering & Technology",
     duration: "2020 - 2024",
     detail:
-      "Started Bachelor in Computer Science from NED University in 2020 and currently in fifth semester (3rd year) with CGPA 3.8/4.0",
+      "Started Bachelor in Computer Science from NED University in 2020 and currently in last semester with CGPA 3.82/4.00",
   },
   {
     degree: "Intermediate (Pre-Engineering)",

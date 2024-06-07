@@ -3,15 +3,24 @@
   gap: 20px;
 }
 .card {
-  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
   background-color: #616368;
   border-radius: 15px;
-  padding: 48px 40px;
+  padding: 1rem 1rem;
   flex-grow: 1;
 }
 .card > p {
   line-height: 1.6;
   font-weight: 600;
+  min-height: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
   color: var(--GreyShade1);
 }
 .lowerDiv {

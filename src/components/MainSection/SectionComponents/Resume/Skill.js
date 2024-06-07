@@ -6,35 +6,51 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const programmingSkills = [
   {
-    name: "React JS",
+    name: "HTML",
+    percentage: "85",
+  },
+  {
+    name: "CSS",
     percentage: "80",
   },
   {
     name: "JavaScript",
-    percentage: "66",
+    percentage: "75",
+  },
+  {
+    name: "React JS",
+    percentage: "80",
+  },
+  {
+    name: "Next JS",
+    percentage: "70",
   },
   {
     name: "Node JS",
-    percentage: "40",
+    percentage: "70",
   },
   {
     name: "Bootstrap",
     percentage: "80",
   },
   {
-    name: "HTML",
-    percentage: "75",
+    name: "Tailwind CSS",
+    percentage: "80",
   },
   {
-    name: "CSS",
+    name: "Material UI",
     percentage: "70",
   },
   {
     name: "Firebase",
-    percentage: "50",
+    percentage: "65",
   },
   {
-    name: "Wordpress",
+    name: "MongoDB",
+    percentage: "70",
+  },
+  {
+    name: "SQL",
     percentage: "60",
   },
 ];
